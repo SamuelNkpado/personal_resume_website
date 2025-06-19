@@ -1,3 +1,4 @@
+/* CSS root variables for color palette, font styles, and base font size used across the site */
 :root {
     --choco: #000080;
     --lteal: #A3DCCF;
@@ -204,6 +205,7 @@ header h1 [class*="fa-"]:hover {
     background-color: var(--lteal);
 }
 
+/* Responsive styles for screens wider than 865px: center header, hide menu toggle icons and header gradient */
 @media (min-width: 865px){
     header {
         max-width: 1200px;
@@ -354,6 +356,7 @@ img {
     object-position: left center;
 }
 
+/* Responsive layout for screens wider than 550px: apply grid to articles, resize images, and align text and images side by side in projects/about sections */
 @media (min-width: 550px) {
 	img {
 		height: 350px;
@@ -394,6 +397,7 @@ img {
 		justify-content: flex-start;
 	}
 }
+/* Footer styling: centered text, horizontal flex list for social icons with spacing and hover color effect */
 footer {
     padding: 4rem 0;
     text-align: center;
@@ -412,6 +416,7 @@ footer [class*="fa-"]:hover {
     color: var(--lyellow);
 }
 
+/* Styles for the contact form: flex layout with spacing, styled labels, inputs, and textarea with focus effects and custom button alignment */
 
 form {
   display: flex;

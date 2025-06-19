@@ -1,3 +1,4 @@
+// Toggle navigation menu visibility: show nav and close icon on menu click, hide them on close icon click
 const nav = document.querySelector('nav');
 const menu = document.querySelector('.menu');
 const close = document.querySelector('.close');
@@ -15,7 +16,7 @@ close.addEventListener('click', () => {
     close.classList.remove('close-show');
 });
 
-// Form Validation
+// Basic client-side validation on contact form submit; shows error if fields are empty, otherwise shows sending status
 document.getElementById('contactForm').addEventListener('submit', function (e) {
     const name = document.getElementById('name');
     const email = document.getElementById('email');
